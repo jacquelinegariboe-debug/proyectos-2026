@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcce0;
+    color: #ed267b;
+}
+
+.promocion {
+    height: 28px;
+    background-color: #ffc4db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #ff91bd;
+    padding: 17px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ed267b;
+    font-size:2em
+}
+
+
+.sucursales {
+    background-color: #ff91bd;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+
+.imagen {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+
+.contenido {
+    flex: 1;
+}
+
+
+.informacion-contacto {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    color: #333333;
+}
+
+.informacion-contacto p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.informacion-contacto .icono {
+    color: #ed267b;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.informacion-contacto a {
+    color: #ed267b;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 0;
+}
+
