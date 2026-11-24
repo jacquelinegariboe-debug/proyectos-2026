@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +9,27 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+font-family: 'Poppins', sans-serif;
     background-color: #ffcce0;
     color: #ed267b;
 }
 
+.logo {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    cursor: pointer;
+}
+
 .promocion {
-    height: 28px;
+    height: 40px;
     background-color: #ffc4db;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -37,71 +45,266 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 nav a {
-    color: white;
+    color:white;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #ed267b;
-    font-size:2em
 }
 
+nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
 
-.sucursales {
-    background-color: #ff91bd;
-    padding: 60px 10%;
+nav img.logo {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.portada {
+    text-align: center;
+    padding: 85px 20px 90px;
+    background-color: #ffcce0;
+}
+
+.subtitulo {
+    color:#ae014c;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.portada h1 {
+    color: #ae014c;
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.descripcion-portada {
+    color: #ae014c;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 430px;
+    margin: 0 auto 30px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #ae014c;
+    color: #ffcce0;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #f4aab3;
+    transform: translateY(-3px);
+}
+
+.lista-sucursales {
+    padding: 45px 8% 80px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.lista-sucursales > h2 {
+    text-align: center;
+    color: #ae014c;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.introduccion {
+    text-align: center;
+    color: #ae014c;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+.sucursal {
     display: flex;
     align-items: center;
-    gap: 30px;
-    color: white;
+    gap: 35px;
+    background-color: #ffdddd;
+    color: #55131c;
+    padding: 18px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.sucursal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
 
-.imagen {
-    width: 180px;
-    height: 180px;
+.sucursal img {
+    width: 280px;
+    height: 230px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 16px;
     flex-shrink: 0;
 }
-
 
 .contenido {
     flex: 1;
+    padding: 15px;
 }
 
-
-.informacion-contacto {
-    width: 100%;
-    text-align: left;
-    margin-top: 20px;
-    color: #333333;
+.etiqueta {
+    color: #b44b5c;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
-.informacion-contacto p {
+.contenido h3 {
+    color: #661923;
+    font-size: 27px;
+    margin: 12px 0 22px;
+}
+
+.contenido p {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    align-items: flex-start;
+    gap: 12px;
+    color: #663a40;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
-.informacion-contacto .icono {
-    color: #ed267b;
-    font-size: 19px;
+.icono {
+    font-size: 18px;
     flex-shrink: 0;
 }
 
-.informacion-contacto a {
-    color: #ed267b;
+.contenido a {
+    color: #a6324b;
     text-decoration: none;
-    font-weight: normal;
-    margin: 0;
+    font-weight: bold;
 }
 
+.contenido a:hover {
+    text-decoration: underline;
+}
+
+.sucursal:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.despedida {
+    text-align: center;
+    padding: 65px 20px 80px;
+    background-color: #ae014c;
+}
+
+.despedida h2 {
+    color: #ffe1e2;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.despedida p {
+    color: #edbec3;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.despedida span {
+    color: #f4aab3;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    nav .logo {
+    font-size: 20px;
+}
+
+nav img.logo {
+    width: 100px;
+    max-width: 100px;
+}
+    .portada {
+        padding: 65px 20px;
+    }
+
+    .lista-sucursales {
+        padding: 35px 5%;
+    }
+
+    .lista-sucursales > h2 {
+        font-size: 28px;
+    }
+
+    .sucursal,
+    .sucursal:nth-of-type(even) {
+        flex-direction: column;
+        gap: 10px;
+        padding: 13px;
+    }
+
+    .sucursal img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .contenido {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .contenido h3 {
+        font-size: 23px;
+    }
+
+    .contenido p {
+        font-size: 12px;
+    }
+
+    .despedida h2 {
+        font-size: 26px;
+    }
+}
+nav a:not(.logo-link) {
+    transition: transform 0.3s ease;
+}
+
+nav a:not(.logo-link):hover {
+    transform: scale(2.0);
+}

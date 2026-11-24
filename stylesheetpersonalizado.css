@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+    background-color: #ffcce0;
+    color: #ed267b;
+}
+
+.promocion {
+    background-color: #ffcce0;
+    color: #ae014c;
+    text-align: center;
+    padding: 9px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+header {
+    background-color: #ed267b;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffe2e3;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ae014c;
+}
+
+nav img.logo {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.contenedor-pedido {
+    padding: 50px 8%;
+    min-height: 100vh;
+}
+
+.contenedor-pedido h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #ae014c;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #ae014c;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.contenido-pedido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.lista-productos,
+.resumen-pedido {
+    background-color: #fff0f0;
+    color: #ae014c;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.lista-productos h2,
+.resumen-pedido h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f5b6c9;
+}
+
+.producto-carrito img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.info-producto {
+    flex: 1;
+}
+
+.info-producto h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.info-producto p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cantidad-producto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cantidad-producto button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #ed267b;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+}
+
+
+.eliminar-producto {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ae014c;
+    font-size: 20px;
+}
+
+.detalle-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.linea {
+    border-bottom: 1px solid #f5b6c9;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#confirmar-pedido {
+    width: 100%;
+    background-color: #ed267b;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+#confirmar-pedido:hover {
+    background-color: #ae014c;
+}
+
+.seguir-comprando {
+    display: block;
+    text-align: center;
+    color: #ae014c;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.seguir-comprando:hover {
+    text-decoration: underline;
+}
+
+.carrito-vacio {
+    text-align: center;
+    padding: 30px 10px;
+    color: #ae014c;
+    font-size: 14px;
+}
+
+
+@media (max-width: 700px) {
+
+    .contenido-pedido {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-pedido {
+        padding: 35px 5%;
+    }
+
+    .contenedor-pedido h1 {
+        font-size: 26px;
+    }
+
+    .producto-carrito img {
+        width: 70px;
+        height: 70px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    nav .logo {
+        font-size: 19px;
+    }
+
+}
+nav a:not(.logo-link) {
+    transition: transform 0.3s ease;
+}
+
+nav a:not(.logo-link):hover {
+    transform: scale(2.0);
+}
